@@ -6,6 +6,10 @@
     --text-primary-color: #FFFFFF;
     --black: #000;
     --hero-color: #2f303a;
+    --icon-color: #afb1b8;
+    --background-icon:#F5F4FA;
+    --icon-bg-color: rgba(255, 255, 255, 0.1);
+
   }
 
   h1,
@@ -69,6 +73,7 @@ color: var(--black);
 margin-right: 93px;
 padding-top: 24px;
 padding-bottom: 25px;
+display: block;
 }
 
 .menu-list,
@@ -99,21 +104,42 @@ color: var(--title-color);
 }
 
 .mail-link{
+
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
+    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--text-color);
+    fill: var(--icon-color);
+  }
+
+
+
+.nav-contacts-icon{
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 .contact .item + .item {
   margin-left: 50px;
 }
 .phone-number{
-font-weight: 500;
-line-height: 1.14;
-letter-spacing: 0.02em;
-color: var(--text-color);
+display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  fill: var(--icon-color);
 }
+
 
 .menu-item.active,
 .menu-item:focus,
@@ -127,8 +153,6 @@ color: var(--text-color);
   display: flex;
   align-items: center;
   margin-left: auto;
-  padding-bottom: 32px;
-  padding-top: 32px;
 
 }
 
@@ -154,6 +178,7 @@ color: var(--text-color);
   text-align: center;
 margin-right: auto;
 margin-left: auto;
+background-image: url(../images/backround/backround.jpg);
   }
 
 .main-title{
@@ -400,4 +425,167 @@ cursor: pointer;
   gap: 30px;
 padding: 0;
 padding-bottom: 50px;}
+
+.feature-icon {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+    height: 120px;
+    margin-bottom: 30px;
+  background-color: var(--background-icon);
+  }
+
+    .feature-item-icon {
+      display: flex;
+      flex-wrap: wrap;
+    
+      width: 70px;
+      height: 70px;
+    }
+
+    .team-social-list {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin: 0px;
+      padding-bottom: 30px;
+    }
+
+    .team-social-item {
+      display: flex;
+    
+      justify-content: center;
+    }
+
+    .team-social-link {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      fill: var(--icon-color);
+    }
+
+    .team-social-link:hover,
+    .team-social-link:focus {
+     fill: var(--text-primary-color);
+     background: var(--active-color);
+}
+     .team-social-icon {
+       width: 20px;
+       height: 20px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.clients-list-item {
+  width: calc((100% - 150px) / 6);}
+
+.clients-link {
+  display: flex;
+  flex-wrap: wrap;
+  height: 92px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  align-content: center;
+  justify-content: center;
+  fill: var(--icon-color);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  fill: var(--active-color);
+  border: 1px solid var(--active-color);
+}
+
+.social {
+  margin-left: 70px;
+}
+
+.social-title {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  font-style: normal;
+  color: var(--background);
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-list-item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--icon-bg-color);
+}
+
+.social-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  fill: var(--text-primary-color);
+}
+
+.social-item-logo {
+  width: 20px;
+  height: 20px;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background: var(--active-color);
+}
+
+.footer-contact{
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-address-social {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-list-item {
+  margin-bottom: 9px;
+}
+
+.footer-list :last-of-type {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+
+.footer-list-item {
+  margin-bottom: 9px;
+}
+
+
+
+
+
+
+
+
+
+
 
